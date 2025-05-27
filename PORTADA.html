@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>PORTADA</title>
+  
+
+  
+  
+  <meta charset="UTF-8">
+
+  
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    .portada {
+      border: 3px solid #004c99;
+      border-radius: 15px;
+      padding: 40px;
+      width: 60%;
+      margin: auto;
+      background-color: #ffffff;
+    }
+    h1 {
+      color: #004c99;
+      font-size: 36px;
+    }
+    h2 {
+      color: #0073e6;
+      margin-top: 30px;
+    }
+    p {
+      font-size: 18px;
+      margin: 10px;
+    }
+  </style>
+<meta charset="UTF-8"><style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      text-align: center;
+      padding-top: 100px;
+    }
+    .contenedor {
+      background-color: #ffffff;
+      border: 2px solid #004c99;
+      border-radius: 10px;
+      padding: 30px;
+      width: 50%;
+      margin: auto;
+    }
+    h1 {
+      color: #004c99;
+    }
+    p {
+      font-size: 20px;
+      color: #333;
+    }
+  </style></head><body style="color: rgb(0, 0, 0); background-color: rgb(102, 204, 204);" alink="#ee0000" link="#0000ee" vlink="#551a8b">
+<div style="text-align: center;"><img style="width: 91px; height: 91px;" alt="" src="file:///C:/Sanchez%20Ortiz%20Jose%20Angel%206101/imagenes/descarga%20%284%29.jpg"><br>
+</div>
+
+<div style="background-color: rgb(204, 204, 255);" class="portada">
+<h1 style="color: rgb(153, 0, 0); background-color: rgb(102, 204, 204);">PROYECTO
+DE TICs</h1>
+<h2 style="color: rgb(204, 0, 0); background-color: rgb(102, 204, 204);">Título:
+Introducción a las Tecnologías de la Información</h2>
+<p style="background-color: rgb(102, 204, 204);">Alumno: JOSE ANGEL
+SANCHE ORTIZ</p>
+<p style="background-color: rgb(102, 204, 204);">JOSE LUIS ESCORZA JARILLO<br>
+</p>
+
+<p style="background-color: rgb(102, 204, 204);">Grado y Grupo: SEXTO
+SEMESTRE<br>
+</p>
+<p style="background-color: rgb(102, 204, 204);">Escuela: COBAEH
+MINERAL DE LA REFORMA<br>
+</p>
+<p style="background-color: rgb(102, 204, 204);">Materia: TICs</p>
+<p style="background-color: rgb(102, 204, 204);">Profesor(a): AMERICA
+FUENTES GALVEZ<br>
+</p>
+<br>
+<br>
+<img style="width: 322px; height: 157px;" alt="" src="file:///C:/Sanchez%20Ortiz%20Jose%20Angel%206101/imagenes/descarga%20%285%29.jpg"><br>
+<br>
+<br>
+<h4 style="color: rgb(204, 0, 0); background-color: white;"><a href="MENU.html"><big><big><big>IR AL MENU</big></big></big></a></h4>
+<br>
+</div>
+
+
+
+
+  
+
+
+
+  
+  
+
+
+  
+<div class="contenedor">
+    <h1>Bienvenido</h1>
+    <p id="reloj">Hora actual: --:--:--</p>
+    <p id="contador">Visitas en este navegador: 0</p>
+  </div>
+
+
+  
+<script>
+    // &#128338; Reloj en vivo
+    function actualizarHora() {
+      const ahora = new Date();
+      const hora = ahora.toLocaleTimeString();
+      document.getElementById('reloj').textContent = 'Hora actual: ' + hora;
+    }
+    setInterval(actualizarHora, 1000);
+    actualizarHora();
+
+    // &#128200; Contador de visitas local
+    let visitas = localStorage.getItem('visitas');
+    visitas = visitas ? parseInt(visitas) + 1 : 1;
+    localStorage.setItem('visitas', visitas);
+    document.getElementById('contador').textContent = 'Visitas en este navegador: ' + visitas;
+  </script>
+</body></html>
